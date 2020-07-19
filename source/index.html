@@ -1,12 +1,239 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <h1 class="visually-hidden">Погнали</h1>
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" alt="Логотип сайта">
+      </a>
+      <section class="page-header__nav-section nav-section">
+        <h2 class="nav-section__title nav-section-title">
+          О сервисе направления Попутчики
+        </h2>
+        <nav class="nav-section__nav nav-main">
+          <button class="nav-main__toggle toggle-item">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="nav-main__user user">
+            <li class="user__item">
+              <a class="user__link" href="#">Авторизация</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="nav-section__contacts contacts">
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--tel" href="tel:88005558628">8 800 555-86-28</a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+      </section>
+    </header>
+    <main class="index-main">
+      <em class="index-main__slogan slogan">В путешествие с крутыми попутчиками!</em>
+      <ul class="index-main__contacts contacts contacts--index">
+        <li class="contacts__item contacts__item--index">
+          <a class="contacts__link contacts__link--tel-index visually-hidden" href="tel:88005558628">8 800 555-86-28</a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__link contacts__link--mail-index visually-hidden" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </li>
+      </ul>
+      <ul class="index-main__user user user--index">
+        <li class="user__item user__item--index">
+          <a class="user__link user__link--index" href="#">Авторизация</a>
+        </li>
+      </ul>
+      <div class="index-main__main-quote main-quote">
+        <blockquote class="main-quote__quote">
+          «Лучшее приложение, что я видел в жизни!»
+        </blockquote>
+        <cite>
+          Мурат Эльтазин главный редактор газеты «гаджетлайф»
+        </cite>
+      </div>
+      <ul class="index-main__activity-plan activity-plan">
+        <li class="activity-plan__item activity-plan__item--strongest">
+          <p class="activity-plan__item-description">Выберите направление</p>
+          <p class="activity-plan__number">1</p>
+        </li>
+        <li class="activity-plan__item activity-plan__item--strong">
+          <p class="activity-plan__item-description">Изучите идеи путешественников</p>
+          <p class="activity-plan__number">2</p>
+        </li>
+        <li class="activity-plan__item activity-plan__item--standard">
+          <p class="activity-plan__item-description">Находите тех, кто похож на вас</p>
+          <p class="activity-plan__number">3</p>
+        </li>
+        <li class="activity-plan__item activity-plan__item--weak">
+          <p class="activity-plan__item-description">Путешествуйте вместе!</p>
+          <p class="activity-plan__number">4</p>
+        </li>
+      </ul>
+      <section class="section index-main__about-service about-service">
+        <h2 class="section__title">О сервисе</h2>
+        <p class="section__description about-service__description">
+          Любое путешествие веселее с попутчиками,
+          которые на одной волне с тобой!
+          Делитесь своими идеями путешествий и
+          черпайте вдохновение в чужих.
+        </p>
+        <b class="section__explanation about-service__explanation">
+          А если найдете кого-то близкого по духу —
+          скорее зовите в совместный трип!
+        </b>
+      </section>
+      <section class="section index-main__direction direction">
+        <h2 class="section__title">Направления</h2>
+        <p class="section__description direction__description">
+          Мы не продаем туры и ничего не рекламируем.
+          Люди сами пишут о странах, куда хотели бы
+          отправиться и чем можно там заняться.
+        </p>
+        <ul class="direction__list direction-list">
+          <li class="direction-list__item direction-item direction-item--thailand">
+            <div class="direction__group direction__group--thailand">
+              <h3 class="direction__title">Таиланд</h3>
+              <span class="direction__followers">18321</span>
+              <p class="direction__description">Джунгли зовут!</p>
+            </div>
+          </li>
+          <li class="direction-list__item direction-item direction-item--france">
+            <div class="direction__group direction__group--france">
+              <h3 class="direction__title">Франция</h3>
+              <span class="direction__followers">12518</span>
+              <p class="direction__description">Трэ бьен, манифик!</p>
+            </div>
+          </li>
+          <li class="direction-list__item direction-item direction-item--czech">
+            <div class="direction__group direction__group--czech">
+              <h3 class="direction__title">Чехия</h3>
+              <span class="direction__followers">5326</span>
+              <p class="direction__description">Закоулки старой Европы</p>
+            </div>
+          </li>
+        </ul>
+        <a class="direction__show-all show-all" href="form.html">Показать все</a>
+      </section>
+      <section class="section index-main__companions companions">
+        <h2 class="section__title">О сервисе</h2>
+        <p class="section__description companions__description">
+          Все мы индивидуальны,
+          и у каждого свой взгляд на
+          идеальный отдых. Одному нужен
+          пляж и коктейль, а другому
+          маршрут для хайкинга.
+        </p>
+        <b class="section__explanation companions__explanation">
+          Теперь можно легко найти
+          единомышленников!
+        </b>
+        <ul class="companions__list companions-list">
+          <li class="companions-list__item">
+            <div class="companions-list__group">
+              <ul class="companions-list__countries">
+                <li class="companions-list__country companions-list__country--sri-lanka" aria-label="Шри-ланка"></li>
+                <li class="companions-list__country companions-list__country--thailand" aria-label="Таиланд"></li>
+                <li class="companions-list__country companions-list__country--seychelles" aria-label="Сейшельские острова"></li>
+              </ul>
+              <h3></h3>
+              <ul class="companions-list__tags">
+                <li class="companions-list__tag">#ЗОЖ</li>
+                <li class="companions-list__tag">#ПП</li>
+                <li class="companions-list__tag">#Фитнес</li>
+                <li class="companions-list__tag">#пляж</li>
+                <li class="companions-list__tag">#авокадо</li>
+                <li class="companions-list__tag">#смузи</li>
+              </ul>
+              <ul class="companions-list__transport-vehicles">
+                <li class="companions-list__transport" aria-label="Самолёт"></li>
+                <li class="companions-list__transport companions-list__transport--disabled" aria-label="Автобус"></li>
+                <li class="companions-list__transport companions-list__transport--disabled" aria-label="Велосипед"></li>
+                <li class="companions-list__transport companions-list__transport--disabled" aria-label="Пешком"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="companions-list__item">
+            <div class="companions-list__group">
+              <ul class="companions-list__countries">
+                <li class="companions-list__country companions-list__country--germany" aria-label="Германия"></li>
+                <li class="companions-list__country companions-list__country--czech" aria-label="Чехия"></li>
+              </ul>
+              <h3></h3>
+              <ul class="companions-list__tags">
+                <li class="companions-list__tag">#бургер</li>
+                <li class="companions-list__tag">#бар</li>
+                <li class="companions-list__tag">#футбол</li>
+                <li class="companions-list__tag">#концерт</li>
+                <li class="companions-list__tag">#крафт</li>
+              </ul>
+              <ul class="companions-list__transport-vehicles">
+                <li class="companions-list__transport companions-list__transport--disabled" aria-label="Самолёт"></li>
+                <li class="companions-list__transport companions-list__transport--disabled" aria-label="Автобус"></li>
+                <li class="companions-list__transport" aria-label="Велосипед"></li>
+                <li class="companions-list__transport companions-list__transport--disabled" aria-label="Пешком"></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <a class="companions__show-all show-all" href="photo.html">Показать всех</a>
+      </section>
+      <section class="section index-main__add-profile add-profile">
+        <h2 class="section__title section__title--add-profile">Добавьте свой профиль</h2>
+        <ul class="add-profile__list">
+          <li class="add-profile__item">
+            <p class="add-profile__description-item add-profile__description-item--strong">Базовое размещение Бесплатно</p>
+            <span class="add-profile__number">1</span>
+          </li>
+          <li class="add-profile__item">
+            <p class="add-profile__description-item add-profile__description-item--standard">Вывод на первых позициях 99 руб./мес</p>
+            <span class="add-profile__number">2</span>
+          </li>
+          <li class="add-profile__item">
+            <p class="add-profile__description-item add-profile__description-item--weak">Кастомный цвет карточки 59 руб./мес</p>
+            <span class="add-profile__number">3</span>
+          </li>
+        </ul>
+        <a class="add-profile__show-rates" href="#">Показать тарифы для бизнеса</a>
+      </section>
+      <section class="section index-main__interested interested">
+        <p class="section__description interested__description">
+          Зарегистрируйтесь,
+          это быстро и бесплатно!
+          Уже зарегистрированы? Тогда
+          скорее <a class="interested__authorization-link" href="#">авторизуйтесь</a>.
+        </p>
+        <form class="interested__form">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img src="https://via.placeholder.com/150x150" alt="Логотип сайта">
+      </a>
+      <ul class="page-footer__social-networks social-networks">
+        <li class="social-networks__item">
+          <a class="social-networks__link social-networks__link--facebook" href="#" aria-label="Фейсбук"></a>
+        </li>
+        <li class="social-networks__item">
+          <a class="social-networks__link social-networks__link--vk" href="#" aria-label="Вконтакте"></a>
+        </li>
+        <li class="social-networks__item">
+          <a class="social-networks__link social-networks__link--insta" href="#" aria-label="Инстаграм"></a>
+        </li>
+      </ul>
+      <div class="page-footer__developer developer">
+        <p class="developer__description" >Разработано</p>
+        <a class="developer__logo">
+          <img src="https://via.placeholder.com/150x150" alt="Логотип сайта разработчика">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
