@@ -10,11 +10,25 @@
         <img src="https://via.placeholder.com/150x150" alt="Логотип сайта">
       </a>
       <h1 class="visually-hidden">Погнали</h1>
-      <section class="page-header__nav-section nav-section">
-        <h2 class="nav-section__title nav-section-title">
-          О сервисе направления Попутчики
-        </h2>
-        <nav class="nav-section__nav nav-main">
+      <div class="page-header__nav-wrapper nav-wrapper">
+        <nav class="nav-wrapper__nav-main nav-main">
+          <ul class="nav-main__nav-list">
+            <li class="nav-main__nav-link">
+              <a>
+                О сервисе
+              </a>
+            </li>
+            <li class="nav-main__nav-link">
+              <a href="form.html">
+                Направления
+              </a>
+            </li>
+            <li class="nav-main__nav-link">
+              <a href="catalog.html">
+                Попутчики
+              </a>
+            </li>
+          </ul>
           <button class="nav-main__toggle toggle-item">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -24,7 +38,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="nav-section__contacts contacts">
+        <ul class="nav-wrapper__contacts contacts">
           <li class="contacts__item">
             <a class="contacts__link contacts__link--tel" href="tel:88005558628">8 800 555-86-28</a>
           </li>
@@ -32,7 +46,7 @@
             <a class="contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
-      </section>
+      </div>
     </header>
     <main class="index-main">
       <em class="index-main__slogan slogan">В путешествие с крутыми попутчиками!</em>
