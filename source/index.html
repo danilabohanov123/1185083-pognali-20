@@ -154,9 +154,15 @@
             </p>
             <div class="companions-list__group">
               <ul class="companions-list__countries countries">
-                <li class="countries__country countries__country--sri-lanka visually-hidden">Шри-ланка</li>
-                <li class="countries__country countries__country--thailand visually-hidden">Таиланд</li>
-                <li class="countries__country countries__country--seychelles visually-hidden">Сейшелы</li>
+                <li class="countries__country countries__country--sri-lanka">
+                  <span class="visually-hidden">Шри-ланка</span>
+                </li>
+                <li class="countries__country countries__country--thailand">
+                  <span class="visually-hidden">Таиланд</span>
+                </li>
+                <li class="countries__country countries__country--seychelles">
+                  <span class="visually-hidden">Сейшелы</span>
+                </li>
               </ul>
               <h3 class="companions-list__name">Таня Фирсова</h3>
               <ul class="companions-list__tags tags-list">
@@ -181,8 +187,12 @@
             </p>
             <div class="companions-list__group">
               <ul class="companions-list__countries countries">
-                <li class="countries__country countries__country--germany visually-hidden">Германия</li>
-                <li class="countries__country countries__country--czech visually-hidden">Чехия</li>
+                <li class="countries__country countries__country--germany">
+                  <span class="visually-hidden">Германия</span>
+                </li>
+                <li class="countries__country countries__country--czech">
+                  <span class="visually-hidden">Чехия</span>
+                </li>
               </ul>
               <h3 class="companions-list__name">Петя Дёмин</h3>
               <ul class="companions-list__tags tags-list">
@@ -228,8 +238,10 @@
           Уже зарегистрированы? Тогда
           скорее <a class="interested__authorization-link" href="#">авторизуйтесь</a>.
         </p>
-        <form class="interested__form">
-
+        <form class="interested__mail-form mail-form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="mail-form__mail-input" id="mail-input" name="mail-input" placeholder="E-mail">
+          <label class="visually-hidden" for="mail-input">Введите email для регистрации</label>
+          <button class="mail-form__submit-button" type="submit" aria-label="Оправить"></button>
         </form>
       </section>
     </main>
