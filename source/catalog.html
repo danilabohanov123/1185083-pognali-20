@@ -49,6 +49,84 @@
       </div>
     </header>
     <main class="catalog-main">
+      <section class="catalog-main__traveler-form-section traveler-form-section">
+        <h2 class="traveler-form-section__title">Подберите идеального попутчика</h2>
+        <form class="traveler-form-section__traveler-form traveler-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="traveler-form__item form-popup-item">
+            <legend class="form-popup-item__legend form-legend">Хобби</legend>
+            <button class="form-popup-item__control" type="button" aria-label="Показать список"></button>
+            <ul class="form-popup-item__list">
+            </ul>
+          </fieldset>
+          <fieldset class="traveler-form__item form-popup-item">
+            <legend class="form-popup-item__legend form-legend">Музыка</legend>
+            <button class="form-popup-item__control form-popup-item__control--active" type="button" aria-label="Показать список"></button>
+            <ul class="form-popup-item__list">
+              <li class="form-popup-item__item">
+                <input class="form-popup-item__input" name="music" id="heavy-rock" value="heavy-rock">
+                <label class="form-popup-item__label" for="heavy-rock">Тяжёлый рок</label>
+              </li>
+              <li class="form-popup-item__item">
+                <input class="form-popup-item__input" name="music" id="russian-rap" value="russian-rap">
+                <label class="form-popup-item__label" for="russian-rap">Тяжёлый рок</label>
+              </li>
+              <li class="form-popup-item__item">
+                <input class="form-popup-item__input" name="music" id="eurodance" value="eurodance">
+                <label class="form-popup-item__label" for="eurodance">Тяжёлый рок</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="traveler-form__item form-popup-item">
+            <legend class="form-popup-item__legend form-legend">Еда</legend>
+            <button class="form-popup-item__control" type="button" aria-label="Показать список"></button>
+            <ul class="form-popup-item__list">
+
+            </ul>
+          </fieldset>
+          <fieldset class="traveler-form__item form-popup-item">
+            <legend class="form-popup-item__legend form-legend">Транспорт</legend>
+            <button class="form-popup-item__control form-popup-item__control--active" type="button" aria-label="Показать список"></button>
+            <ul class="form-popup-item__list transport-vehicles">
+              <li class="form-popup-item__item form-popup-item__item--transport">
+                <input class="form-popup-item__input" name="tranport" id="plane" value="plane">
+                <label class="form-popup-item__label form-popup-item__label--plane" for="plane">Самолет</label>
+              </li>
+              <li class="form-popup-item__item form-popup-item__item--transport">
+                <input class="form-popup-item__input" name="tranport" id="bus" value="bus">
+                <label class="form-popup-item__label form-popup-item__label--bus" for="bus">Автобус</label>
+              </li>
+              <li class="form-popup-item__item form-popup-item__item--transport">
+                <input class="form-popup-item__input" name="tranport" id="bicycle" value="bicycle">
+                <label class="form-popup-item__label form-popup-item__label--bicycle" for="bicycle">Велосипед</label>
+              </li>
+              <li class="form-popup-item__item form-popup-item__item--transport">
+                <input class="form-popup-item__input" name="tranport" id="on-foot" value="on-foot">
+                <label class="form-popup-item__label form-popup-item__label--on-foot" for="on-foot">Пешком</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="traveler-form__item form-popup-item">
+            <legend class="form-popup-item__legend form-legend">Левел</legend>
+            <button class="form-popup-item__control form-popup-item__control--active" type="button" aria-label="Показать список"></button>
+            <div class="form-popup-item__filter-range filter-range">
+              <div class="filter-range__price-controls price-controls">
+                <label class="visually-hidden" for="min-price">Минимальный уровень</label>
+                <input class="price-controls__input" type="number" id="min-price" name="min-price" value="30" step="1" min="0" max="100">
+                <label class="visually-hidden" for="max-price">Максимальный уровень</label>
+                <input class="price-controls__input" type="number" id="max-price" name="max-price" value="100" step="1" min="0" max="100">
+              </div>
+              <div class="filter-range__range-controls range-controls">
+                <div class="range-controls__scale">
+                  <div class="range-controls__bar"></div>
+                </div>
+                <div class="range-controls__toggle range-controls__toggle--min" tabindex="0"></div>
+                <div class="range-controls__toggle range-controls__toggle--max" tabindex="0"></div>
+              </div>
+            </div>
+          </fieldset>
+          <button class="traveler-form__sumbit-button" type="submit">Показать</button>
+        </form>
+      </section>
       <section class="catalog-main__travelers travelers">
         <h2 class="visually-hidden">Список путешественников</h2>
         <ul class="travelers__list travelers-list">
