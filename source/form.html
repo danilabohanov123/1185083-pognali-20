@@ -9,7 +9,6 @@
       <a class="page-header__logo" href="index.html">
         <img src="https://via.placeholder.com/150x150" alt="Логотип сайта">
       </a>
-      <h1 class="page-body__title">Направления</h1>
       <div class="page-header__nav-wrapper nav-wrapper">
         <nav class="nav-wrapper__nav-main nav-main">
           <ul class="nav-main__nav-list">
@@ -32,9 +31,9 @@
           <button class="nav-main__toggle toggle-item">
             <span class="visually-hidden">Открыть/закрыть</span>
           </button>
-          <ul class="nav-main__user user">
-            <li class="user__item">
-              <a class="user__link" href="#">Авторизация</a>
+          <ul class="nav-main__user-list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">Авторизация</a>
             </li>
           </ul>
         </nav>
@@ -48,8 +47,128 @@
         </ul>
       </div>
     </header>
-    <main class="form-main">
-
+    <main class="page-main">
+      <h1 class="page-main__title">Направления</h1>
+      <section class="page-main__user-profile user-profile">
+        <h2 class="visually-hidden">Профиль пользователя</h2>
+        <div class="user-profile__info-wrapper">
+          <p class="user-profile__leveltraveler-level traveler-level--profile">
+            80
+          </p>
+          <a class="user-profile__photo-link photo-link photo-link--profile" href="#">
+            <img class="photo-link__photo" src="https://via.placeholder.com/150x150" alt="Петя Демин">
+          </a>
+        </div>
+        <h3 class="user-profile__profile-group-title">Теги</h3>
+        <ul class="user-profile__tags tags-list tags-list--profile">
+          <li class="tags-list__tag">#бургер</li>
+          <li class="tags-list__tag">#бар</li>
+          <li class="tags-list__tag">#футбол</li>
+          <li class="tags-list__tag">#концерт</li>
+          <li class="tags-list__tag">#крафт</li>
+        </ul>
+        <h3 class="user-profile__profile-group-title">Теги</h3>
+        <ul class="transport-vehicles transport-vehicles--special-full">
+          <li class="transport-vehicles__transport transport-vehicles__transport--plane" aria-label="Самолет"></li>
+          <li class="transport-vehicles__transport transport-vehicles__transport--bus" aria-label="Автобус"></li>
+          <li class="transport-vehicles__transport transport-vehicles__transport--bicycle transport-vehicles__transport--disabled" aria-label="Велосипед"></li>
+          <li class="transport-vehicles__transport transport-vehicles__transport--on-foot" aria-label="Пешком"></li>
+        </ul>
+      </section>
+      <section class="page-main__my-plans my-plans">
+        <h2 class="my-plans__title user-info-title">Мои планы:</h2>
+        <ul class="my-plans__plans-list plans-list">
+          <li class="plans-list__my-plan my-plan">
+            <h3 class="my-plan__title">1. Франция, Италия</h3>
+            <p class="my-plan__my-companions">3 попутчика</p>
+            <p class="my-plan__dates">26 мар — 29 мар</p>
+            <a class="my-plan__change-plan">Изменить</a>
+          </li>
+          <li class="plans-list__my-plan my-plan">
+            <h3 class="my-plan__title">2. Таиланд, Индонезия</h3>
+            <p class="my-plan__my-companions">1 попутчик</p>
+            <p class="my-plan__dates">1 июл — 15 июл</p>
+            <a class="my-plan__change-plan">Изменить</a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-main__new-plan new-plan">
+        <h2 class="new-plan_title user-info-title">Добавить план:</h2>
+        <ul class="new-plan__indicators-list indicators-list">
+          <li class="indicators-list__indicator" aria-label="индикатор активности"></li>
+          <li class="indicators-list__indicator" aria-label="индикатор активности"></li>
+          <li class="indicators-list__indicator" aria-label="индикатор активности"></li>
+        </ul>
+        <ul class="new-plan__сreation-stages сreation-stages">
+          <li class="сreation-stages__stage сreation-stage">
+            <h3 class="сreation-stage__title">Шаг 1.<br>Даты пребывания</h3>
+            <p class="сreation-stage__description">Укажите предпочтительное
+              количество попутчиков, которых
+              вы хотели бы позвать в поездку
+              и ее предполагаемую длительность.</p>
+            <form class="сreation-stage__dates-form dates-form" action="https://echo.htmlacademy.ru" method="post">
+              <ul class="dates-form__input-numbers input-numbers">
+                <li class="input-numbers__item">
+                  <label class="input-numbers__label" for="companions-numder">Ищу попутчиков:</label>
+                  <input class="input-numbers__input" type="number" id="companions-numder" min="1" max="100">
+                  <button class="input-numbers__control input-numbers__control--minus" type="button" aria-label="Уменьшить"></button>
+                  <button class="input-numbers__control input-numbers__control--plus" type="button" aria-label="Увеличить"></button>
+                </li>
+                <li class="input-numbers__item">
+                  <label class="input-numbers__label" for="days-numder">Длительность:</label>
+                  <input class="input-numbers__input" type="number" name="days-numder" id="days-numder" min="1" max="100">
+                  <button class="input-numbers__control input-numbers__control--minus" type="button" aria-label="Уменьшить"></button>
+                  <button class="input-numbers__control input-numbers__control--plus" type="button" aria-label="Увеличить"></button>
+                </li>
+              </ul>
+              <p class="dates-form__checkbox-item checkbox-item">
+                <label class="checkbox-item__label">
+                  <input class="checkbox-item__checkbox visually-hidden" type="checkbox" name="children">
+                </label>
+              </p>
+              <button class="dates-form__sumbit-button sumbit-button sumbit-button--сreation-stage">Следующий шаг</button>
+            </form>
+          </li>
+          <li class="сreation-stages__stage сreation-stage">
+            <h3 class="сreation-stage__title">Шаг 2.<br>Маршрут</h3>
+            <p class="сreation-stage__description">
+              Укажите страны, которые вы
+              хотели посетить. Это может быть
+              одна или сразу несколько.</p>
+            <form class="сreation-stage__countries-form countries-form" action="https://echo.htmlacademy.ru" method="post">
+              <button class="countries-form__sumbit-button sumbit-button sumbit-button--сreation-stage">Следующий шаг</button>
+              <button class="countries-form__reset" type="reset">На шаг назад</button>
+            </form>
+          </li>
+          <li class="сreation-stages__stage сreation-stage">
+            <h3 class="сreation-stage__title">Шаг 3.<br>Развлечения</h3>
+            <p class="сreation-stage__description">
+              Наконец, расскажите о своих
+              планах времяпровождения.
+              Можно писать в свободной
+              форме и ставить тэги.
+            </p>
+            <form class="сreation-stage__activities activities-form" action="https://echo.htmlacademy.ru" method="post">
+              <ul class="activities-form__list activities-list">
+                <li class="activities-list__country">
+                  <h4 class="activities-list__title">Босния и Герцеговина</h4>
+                  <textarea class="activities-list__item-description" placeholder="План действий"></textarea>
+                </li>
+                <li class="activities-list__item">
+                  <h4 class="activities-list__country">Босния и Герцеговина</h4>
+                  <textarea class="activities-list__item-description">
+                    Пить пиво и лазить
+                    по старым замкам,
+                    наслаждаться архитектурой
+                    и вот это все.</textarea>
+                </li>
+              </ul>
+              <button class="dates-form__sumbit-button sumbit-button sumbit-button--сreation-stage">Следующий шаг</button>
+              <button class="dates-form__reset" type="reset">На шаг назад</button>
+            </form>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">

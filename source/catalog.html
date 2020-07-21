@@ -9,7 +9,6 @@
       <a class="page-header__logo" href="index.html">
         <img src="https://via.placeholder.com/150x150" alt="Логотип сайта">
       </a>
-      <h1 class="page-body__title">Попутчики</h1>
       <div class="page-header__nav-wrapper nav-wrapper">
         <nav class="nav-wrapper__nav-main nav-main">
           <ul class="nav-main__nav-list">
@@ -32,9 +31,9 @@
           <button class="nav-main__toggle toggle-item">
             <span class="visually-hidden">Открыть/закрыть</span>
           </button>
-          <ul class="nav-main__user user">
-            <li class="user__item">
-              <a class="user__link" href="#">Авторизация</a>
+          <ul class="nav-main__user-list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">Авторизация</a>
             </li>
           </ul>
         </nav>
@@ -48,8 +47,9 @@
         </ul>
       </div>
     </header>
-    <main class="catalog-main">
-      <section class="catalog-main__country-filter-section country-filter-section">
+    <main class="page-main">
+      <h1 class="page-main__title">Попутчики</h1>
+      <section class="page-main__country-filter-section country-filter-section">
         <h2 class="country-filter-section__title">Фильтрация по странам</h2>
         <button class="country-filter-section__toggle toggle-item toggle-item--special">
           <span class="visually-hidden">Открыть/закрыть</span>
@@ -173,7 +173,7 @@
         </div>
         <button class="country-filter-section__close-button" type="button">Свернуть</button>
       </section>
-      <section class="catalog-main__traveler-form-section traveler-form-section">
+      <section class="page-main__traveler-form-section traveler-form-section">
         <h2 class="traveler-form-section__title">Подберите идеального попутчика</h2>
         <form class="traveler-form-section__traveler-form traveler-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="traveler-form__item form-popup-item">
@@ -204,28 +204,27 @@
             <legend class="form-popup-item__legend form-legend">Еда</legend>
             <button class="form-popup-item__control" type="button" aria-label="Показать список"></button>
             <ul class="form-popup-item__list">
-
             </ul>
           </fieldset>
           <fieldset class="traveler-form__item form-popup-item">
             <legend class="form-popup-item__legend form-legend">Транспорт</legend>
             <button class="form-popup-item__control form-popup-item__control--active" type="button" aria-label="Показать список"></button>
-            <ul class="form-popup-item__list transport-vehicles">
-              <li class="form-popup-item__item form-popup-item__item--transport">
-                <input class="form-popup-item__input" name="tranport" id="plane" value="plane">
-                <label class="form-popup-item__label form-popup-item__label--plane" for="plane">Самолет</label>
+            <ul class="form-popup-item__list transport-vehicles transport-vehicles--special-full">
+              <li class="form-popup-item__item">
+                <input class="form-popup-item__input" name="transport" id="plane" value="plane">
+                <label class="transport-vehicles__transport transport-vehicles__transport--plane" for="plane" aria-label="Самолет"></label>
               </li>
-              <li class="form-popup-item__item form-popup-item__item--transport">
-                <input class="form-popup-item__input" name="tranport" id="bus" value="bus">
-                <label class="form-popup-item__label form-popup-item__label--bus" for="bus">Автобус</label>
+              <li class="form-popup-item__item">
+                <input class="form-popup-item__input" name="transport" id="bus" value="bus">
+                <label class="transport-vehicles__transport transport-vehicles__transport--bus" for="bus" aria-label="Автобус"></label>
               </li>
-              <li class="form-popup-item__item form-popup-item__item--transport">
-                <input class="form-popup-item__input" name="tranport" id="bicycle" value="bicycle">
-                <label class="form-popup-item__label form-popup-item__label--bicycle" for="bicycle">Велосипед</label>
+              <li class="form-popup-item__item">
+                <input class="form-popup-item__input" name="transport" id="bicycle" value="bicycle">
+                <label class="transport-vehicles__transport transport-vehicles__transport--bicycle" for="bicycle" aria-label="Велосипед"></label>
               </li>
-              <li class="form-popup-item__item form-popup-item__item--transport">
-                <input class="form-popup-item__input" name="tranport" id="on-foot" value="on-foot">
-                <label class="form-popup-item__label form-popup-item__label--on-foot" for="on-foot">Пешком</label>
+              <li class="form-popup-item__item">
+                <input class="form-popup-item__input" name="transport" id="on-foot" value="on-foot">
+                <label class="transport-vehicles__transport transport-vehicles__transport--on-foot" for="on-foot" aria-label="Пешком"></label>
               </li>
             </ul>
           </fieldset>
@@ -248,10 +247,10 @@
               </div>
             </div>
           </fieldset>
-          <button class="traveler-form__sumbit-button" type="submit">Показать</button>
+          <button class="traveler-form__sumbit-button sumbit-button" type="submit">Показать</button>
         </form>
       </section>
-      <section class="catalog-main__travelers travelers">
+      <section class="page-main__travelers travelers">
         <h2 class="visually-hidden">Список путешественников</h2>
         <ul class="travelers__list travelers-list">
           <li class="travelers-list__traveler traveler">
@@ -299,15 +298,15 @@
           </li>
           <li class="travelers-list__traveler traveler">
             <div class="traveler__traver-info-wrapper traver-info-wrapper">
-              <a class="traveler__photo-link" href="#">
-                <img src="https://via.placeholder.com/150x150" alt="Петя Демин">
+              <a class="traveler__photo-link photo-link" href="#">
+                <img class="photo-link__photo" src="https://via.placeholder.com/150x150" alt="Петя Демин">
               </a>
               <p class="traveler__likes likes">
                 1500
               </p>
               <a class="traveler__name-link" href="#">Петя Демин</a>
             </div>
-            <ul class="traveler__tags tags-list">
+            <ul class="traveler__tags tags-list tags-list--traveler-card">
               <li class="tags-list__tag">#бургер</li>
               <li class="tags-list__tag">#бар</li>
               <li class="tags-list__tag">#футбол</li>
